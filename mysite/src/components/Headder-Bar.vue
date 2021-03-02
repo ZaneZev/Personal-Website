@@ -1,8 +1,8 @@
 <template>
     <div class="bar">
-        <span class=leftbit>Hello There</span>
+        <span class="leftbit">Hello There</span>
         <img src="https://media-exp1.licdn.com/dms/image/C5603AQGGnxriDUa-XQ/profile-displayphoto-shrink_200_200/0/1517852449485?e=1620259200&v=beta&t=cKZWGhlFI8A_JvcTY9KUOQvc7hv_ey6eULkjyql_Q2U"/>
-        <span>I am Zane Young, majoring in mechanical engineering at WSU and a hobbiest electronics designer, robotics designer, and programmer</span>
+        <span class="rightside">I am Zane Young, majoring in mechanical engineering at WSU and a hobbiest electronics designer, robotics designer, and programmer.</span>
     </div>
 </template>
 
@@ -37,5 +37,19 @@ span{
 img{
     max-height: 100px;
     vertical-align: middle;
+}
+@media screen and (max-width: 600px){
+    .leftbit{
+        margin-left: 50px;
+    }
+    .rightside{
+        margin: 10px 25px 10px 25px;
+        position: relative;
+        display: inline-block;
+
+    }
+    .bar{
+        height: fit-content;
+    }
 }
 </style>

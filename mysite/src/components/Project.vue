@@ -50,4 +50,14 @@ p{
 .Project-block{
     margin-right:200px;
 }
+@media screen and (max-width: 600px){
+    .Project-block{
+        margin-right:10px;
+    }
+
+    img.projectpic{
+        max-width: 75%;
+        align-content: center;
+    }
+}
 </style>
